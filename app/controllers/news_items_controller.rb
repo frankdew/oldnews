@@ -51,6 +51,10 @@ class NewsItemsController < ApplicationController
     end
   end
 
+  def news_item_params
+    params.require(:news_item).permit(:title, :sub_header, :content, :image)
+  end
+  
   # DELETE /news_items/1
   # DELETE /news_items/1.json
   def destroy
