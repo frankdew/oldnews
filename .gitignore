@@ -11,5 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
+<<<<<<< HEAD
 
 /public/upload
+=======
+/public/uploads
+>>>>>>> f34b6f4e98f77763ec271c021e0633d4717750f7
