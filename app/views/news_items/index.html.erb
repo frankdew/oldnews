@@ -1,4 +1,11 @@
 <h1>News!</h1>
+<p>© <%= Date.today.year %></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <% @news_items.each do |news_item| %>
     <a href="<%= news_item_path news_item%>" class="summary">
       <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
