@@ -1,7 +1,6 @@
 <h1>News!</h1>
 <p>© <%= Date.today.year %></p>
-<br>
-<<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
 <h1>Listing News Items</h1>
 
@@ -28,9 +27,9 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
+<br>
+<br>
 <%= link_to 'New News item', new_news_item_path %>
 
 <% @news_items.each do |news_item| %>
