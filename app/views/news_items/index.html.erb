@@ -1,5 +1,5 @@
-<h1>News!</h1>
-<p>© <%= Date.today.year %></p>
+<h1>News!© <%= Date.today.year %></h1>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing News Items</h1>
@@ -30,6 +30,7 @@
 <br>
 
 <%= link_to 'New News item', new_news_item_path %>
+<br>
 <br>
 <% @news_items.each do |news_item| %>
     <a href="<%= news_item_path news_item%>" class="summary">
