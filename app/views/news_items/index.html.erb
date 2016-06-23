@@ -28,10 +28,9 @@
   </tbody>
 </table>
 <br>
-<br>
-<br>
-<%= link_to 'New News item', new_news_item_path %>
 
+<%= link_to 'New News item', new_news_item_path %>
+<br>
 <% @news_items.each do |news_item| %>
     <a href="<%= news_item_path news_item%>" class="summary">
       <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
