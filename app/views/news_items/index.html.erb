@@ -1,20 +1,7 @@
 <h1>News!</h1>
 <p>© <%= Date.today.year %></p>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<% @news_items.each do |news_item| %>
-    <a href="<%= news_item_path news_item%>" class="summary">
-      <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
-      <h2><%= news_item.title %></h2>
-      <h3><%= news_item.sub_header %></h3>
-    </a>
-<% end %>
-
-<p id="notice"><%= notice %></p>
+<<p id="notice"><%= notice %></p>
 
 <h1>Listing News Items</h1>
 
@@ -45,3 +32,11 @@
 <br>
 
 <%= link_to 'New News item', new_news_item_path %>
+
+<% @news_items.each do |news_item| %>
+    <a href="<%= news_item_path news_item%>" class="summary">
+      <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
+      <h2><%= news_item.title %></h2>
+      <h3><%= news_item.sub_header %></h3>
+    </a>
+<% end %>
