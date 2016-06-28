@@ -35,8 +35,6 @@
 <% @news_items.each do |news_item| %>
     <a href="<%= news_item_path news_item%>" class="summary">
       <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
-      <%= image_tag("http://http://res.cloudinary.com/dbkvamybe/image/upload/c_scale,h_1000,r_100/v1467033089/fallday.jpg",
-          :alt => "Sample Image") %>
       <h2><%= news_item.title %></h2>
       <h3><%= news_item.sub_header %></h3>
     </a>
